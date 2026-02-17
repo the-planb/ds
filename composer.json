@@ -1,0 +1,41 @@
+{
+ "name": "planb/ds",
+ "description": "Php Data Structures and Collection Utils",
+ "type": "library",
+ "license": "MIT",
+"autoload": {
+   "psr-4": {
+    "PlanB\\": "src/"
+   },
+   "files": [
+    "src/Resources/DS/Helper/helper.php"
+   ]
+  },
+ "autoload-dev": {
+  "psr-4": {
+   "PlanB\\Tests\\": "tests/"
+  }
+ },
+ "authors": [
+  {
+   "name": "jmpantoja",
+   "email": "jmpantoja@gmail.com"
+  }
+ ],
+ "minimum-stability": "stable",
+ "config": {
+  "bin-dir": "bin"
+ },
+ "require": {
+  "php": "^8.5",
+  "ext-ctype": "*",
+  "ext-iconv": "*",
+  "dg/bypass-finals": "^1.8",
+  "jetbrains/phpstorm-attributes": "^1.0"
+ },
+ "require-dev": {
+  "symfony/var-dumper": "^7.3",
+  "phpunit/phpunit": "^13.0",
+  "phpstan/phpstan": "^2.1"
+ }
+}
